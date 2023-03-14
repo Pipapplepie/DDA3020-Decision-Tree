@@ -58,6 +58,8 @@ Node m is **pure** if $p^i_m$ for all i are either 0 or 1.
 ### Impurity Measure:
 
 1. For classifiction tree, the goodness of split/ impurity can be quantified by the **classification error**.
-i.e.,
+i.e., 1 - max(p, 1-p)
 
-2. Entropy (for multi-class node): $I_m = - \sum_{i=1}^K \ p^i_m  log_2 p_m^i$.
+2. **Entropy** (for multi-class node): $I_m = - \sum_{i=1}^K \ p^i_m  log_2 p_m^i$.
+
+3. **Information Gain**: 
