@@ -33,7 +33,14 @@ Tree induction (also Tree Learning or Growing) is the construction of tree given
 
 **Until,**
 
-3. Leaf node(s) are pure (only one class remains)
+3. Leaf node(s) are pure (only one class remains);
 
-Or, A maximum depth is reached
-Or, A performance metric is achieved
+  Or, A maximum depth is reached;
+  
+  Or, A performance metric is achieved.
+  
+The tree is constructed in a  **recursive** way, but: What is the **best attribute**? What is the **best split**?
+
+### Best Attribute:
+
+
