@@ -16,7 +16,7 @@ _Def._ DT is a **hierarchical** nonparameric model for supervised learning where
 
 In a **univariate** tree, in each internal node, the test uses only one of the input dimensions.
 
-< img src=https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png width='150'>
+< img src='https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png' width='150'>
 
 ## Tree Learning
 
