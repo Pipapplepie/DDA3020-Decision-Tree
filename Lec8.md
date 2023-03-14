@@ -16,7 +16,7 @@ _Def._ DT is a **hierarchical** nonparameric model for supervised learning where
 
 In a **univariate** tree, in each internal node, the test uses only one of the input dimensions.
 
-<img src="https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png" width="300">
+<img src="https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png" width="500">
 
 ## Tree Learning
 
@@ -60,4 +60,4 @@ Node m is **pure** if $p^i_m$ for all i are either 0 or 1.
 1. For classifiction tree, the goodness of split/ impurity can be quantified by the **classification error**.
 i.e.,
 
-2. Entropy (for multi-class node): $I_m = - \sum_{i=1}^K p^i_m log_2 p_m^i$.
+2. Entropy (for multi-class node): $I_m = - \sum_{i=1}^K \ p^i_m  log_2 p_m^i$.
