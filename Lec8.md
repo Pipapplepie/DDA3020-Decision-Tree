@@ -16,7 +16,7 @@ _Def._ DT is a **hierarchical** nonparameric model for supervised learning where
 
 In a **univariate** tree, in each internal node, the test uses only one of the input dimensions.
 
-![1](https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png)
+< img src=https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png width='150'>
 
 ## Tree Learning
 
@@ -45,10 +45,19 @@ The tree is constructed in a  **recursive** way, but: What is the **best attribu
 
 **Impurity Measure Rule**: the attribute that has the **largest reduction of impurity**.
 
-Impurity
+Impurity:
 
 $$\hat{P}(C_i|x,m) = p_m^i = \frac{N_m^i}{N_m}$$
 
 This means for node m, $N_m$: # training instances reaching node m.
 
 $N_m^i$ of $N_m$ belong to $C_i$, i = 1,...,k with $\sum_i N_m^i = N_m$.
+
+Node m is **pure** if $p^i_m$ for all i are either 0 or 1.
+
+### Impurity Measure:
+
+1. For classifiction tree, the goodness of split/ impurity can be quantified by the **classification error**.
+i.e.,
+
+2. Entropy (for multi-class node): $I_m = - \sum_{i=1}^K p^i_m log_2 p_m^i$.
