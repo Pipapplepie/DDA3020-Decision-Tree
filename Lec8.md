@@ -43,4 +43,12 @@ The tree is constructed in a  **recursive** way, but: What is the **best attribu
 
 ### Best Attribute:
 
+**Impurity Measure Rule**: the attribute that has the **largest reduction of impurity**.
 
+Impurity
+
+$$\hat{P}(C_i|x,m) = p_m^i = \frac{N_m^i}{N_m}$$
+
+This means for node m, $N_m$: # training instances reaching node m.
+
+$N_m^i$ of $N_m$ belong to $C_i$, i = 1,...,k with $\sum_i N_m^i = N_m$.
