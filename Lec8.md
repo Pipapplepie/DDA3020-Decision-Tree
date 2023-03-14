@@ -11,5 +11,9 @@ Till now, we have learnt 3 **parametric models**; linear regression, logistic re
 Thus, we introduce **nonparametric models**, for example, KNN classification model, and decision tree (DT). They don't need strong assumptions and the data are allowed to speak for themselves. 
 
 ## Definition of DT
-_Def._ DT is a **hierarchical** nonparameric model for supervised learning whereby the local region is identified in a sequence of **recursive spilits**. In a **univariate** tree, in each internal node, the test uses only one of the input dimensions.
+_Def._ DT is a **hierarchical** nonparameric model for supervised learning whereby the local region is identified in a sequence of **recursive spilits**. 
+
+In a **univariate** tree, in each internal node, the test uses only one of the input dimensions.
+
+![1](https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png)
 
