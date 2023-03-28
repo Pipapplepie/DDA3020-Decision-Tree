@@ -33,9 +33,20 @@ By solving the problem above, we can predict test data $x_t$ by the sign using $
 
 ## Alternative Derivation: Hinge Loss
 
-<img src='https://user-images.githubusercontent.com/107236740/228136892-94431e65-f48b-446b-afad-6dd67c92f8b2.png' width=750>
+<img src='https://user-images.githubusercontent.com/107236740/228136892-94431e65-f48b-446b-afad-6dd67c92f8b2.png' width=700>
 
-$$max(0, y_i f_{w,b}(x_i))$$
+So the hinge loss is $$max(0, y_i f_{w,b}(x_i))$$
 
 which is non-smooth. 
 
+We can simplify the objective function to:
+
+$$min_{w,b} \ \frac{1}{2} ||w||^2$$
+
+subject to $$w^Tx_i + b \geq 1, \ if \ y_i=1; \ $w^Tx_i + b < 1, \ if \ y_i=-1.$$
+
+Same as above derivation.
+
+Actually, when the projection length is larger, it gives smaller ||w||, which is exactly what we want.
+
+## Lagrange Duality and KKT conditions
