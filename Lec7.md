@@ -31,5 +31,11 @@ subject to $$y_i f_{w,b}(x_i) \geq 1 \ \forall i$$
 
 By solving the problem above, we can predict test data $x_t$ by the sign using $w*$ and $b*$.
 
-## Hinge Loss
+## Alternative Derivation: Hinge Loss
+
+<img src='https://user-images.githubusercontent.com/107236740/228136892-94431e65-f48b-446b-afad-6dd67c92f8b2.png' width=750>
+
+$$max(0, y_i f_{w,b}(x_i))$$
+
+which is non-smooth. 
 
