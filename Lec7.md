@@ -8,7 +8,7 @@ $y_i \in \{ -1, 1 \}$. logistic regression gives multiple solutions to perfectly
 
 This **large margin classifier** is also called support vector machine. (SVM)
 
-## Derivation
+## Derivation 
 
 _review_: inner product of vectors, orthogonal direction, projection to the hyperplane:
 
@@ -23,7 +23,7 @@ or just $min_i \ \frac{y_i f_{w,b}(x_i)}{|w|}$ since $y_i$ = 1 or -1.
 Thus, we want to solve the optimization problem:
 $$max_{w,b} \ min_i \ \frac{y_i f_{w,b}(x_i)}{|w|}$$
 
-By scaling the numerator, (How?) we could simplify the problem to:
+By scaling the numerator, (How?) we could simplify the problem to: **(P)**
 
 $$min_{w,b} \ \frac{1}{2} ||w||^2 $$
 
@@ -49,4 +49,28 @@ Same as above derivation.
 
 Actually, when the projection length is larger, it gives smaller ||w||, which is exactly what we want.
 
-## Lagrange Duality and KKT conditions
+## Lagrange Duality and KKT conditions (Review)
+
+<img src='https://user-images.githubusercontent.com/107236740/228141484-4a611470-b65e-4691-84c6-87a13254c91a.png' width=700>
+
+## Optimization of SVM by Lagrange Duality
+
+We can modify the original probelm **(P)** to its Lagrangian problem:
+
+<img src='https://user-images.githubusercontent.com/107236740/228143908-da99c85d-ebeb-455c-911b-154667efbe8e.png' width = 700>
+
+Solved for $\alpha$, so we get $w = \sum_i^m \alpha_i y_i x_i$.
+
+If $\alpha_i = 0$, then it means $x_i$ does not contribute to w. Otherwise, $\alpha_i > 0$, $x_i$'s are called **support vectors**, which locate at the hyperplanes $y_i f_{w,b}(x_i) = 1$. We therefore define the support set S = $\{ i | \alpha_i > 0 \}$. This is why we call it **support vector machine**!
+
+To determine th bias parameter b:
+
+<img src='https://user-images.githubusercontent.com/107236740/228146597-05a8ab50-a1ba-4b0b-a376-f598b06a15aa.png' width=700>
+
+## SVM with slack variables (Soft Margin SVM)
+
+* **Hard margin SVM**: the set is guaranteed linearly separable. However, in most cases, the set is **non-separable**.
+
+<img src='https://user-images.githubusercontent.com/107236740/228150831-adfc5dd8-dd23-4986-9701-81a6af776ccb.png' width=600>
+
+Thus, our feasible condition changes from $$y_i f_{w,b}(x_i) \geq 1 \ \forall i$$ to $$y_i f_{w,b}(x_i) \geq 1 - \epsilon_i \ \forall i$$
