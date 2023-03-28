@@ -32,3 +32,4 @@ subject to $$y_i f_{w,b}(x_i) \geq 1 \ \forall i$$
 By solving the problem above, we can predict test data $x_t$ by the sign using $w*$ and $b*$.
 
 ## Hinge Loss
+
