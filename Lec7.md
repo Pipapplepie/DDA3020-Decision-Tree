@@ -74,3 +74,13 @@ To determine th bias parameter b:
 <img src='https://user-images.githubusercontent.com/107236740/228150831-adfc5dd8-dd23-4986-9701-81a6af776ccb.png' width=600>
 
 Thus, our feasible condition changes from $$y_i f_{w,b}(x_i) \geq 1 \ \forall i$$ to $$y_i f_{w,b}(x_i) \geq 1 - \epsilon_i \ \forall i$$
+
+Now, we can construct new Lagrangian problem:
+
+<img src='https://user-images.githubusercontent.com/107236740/228153058-a11ce363-73db-49ef-bc35-7d9dd41fd005.png' width=700>
+
+In the end, we can simplify the problem to:
+
+<img scr='https://user-images.githubusercontent.com/107236740/228154375-fd5d8ef7-ba17-4c23-bee2-86191635dd80.png' width=700>
+
+
