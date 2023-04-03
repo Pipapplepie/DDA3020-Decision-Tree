@@ -18,7 +18,7 @@ In a **univariate** tree, in each internal node, the test uses only one of the i
 
 <img src="https://user-images.githubusercontent.com/107236740/224930552-207ad562-ad75-49e7-990d-309d3d2d7356.png" width="500">
 
-## Tree Learning
+## (Univariate) Tree Learning
 
 Tree induction (also Tree Learning or Growing) is the construction of tree given a training set.
 
@@ -74,9 +74,9 @@ e.g.,
 
 We want to choose the attribute that contributes **the largest information gain**!
 
-<img scr='https://user-images.githubusercontent.com/107236740/229419237-3e651ad2-e6de-45fb-9eaf-377754019de1.png' width=400>
+<img src='https://user-images.githubusercontent.com/107236740/229420893-155df1c4-1d1f-494e-b099-7a7234ce8ca9.png' width=400>
 
-## Common Impurity Measures for Binary Problem
+### Common Impurity Measures for Binary Problem
 
 - Entropy: $\phi (p) = - \sum_{i=1}^K \ p_i  log_2 p_i$
 
@@ -85,3 +85,30 @@ We want to choose the attribute that contributes **the largest information gain*
 - Misclassification Error: $\phi (p, 1-p) = 1 - max(p, 1-p)$
 
 <img src='https://user-images.githubusercontent.com/107236740/229420176-4a806c29-9a59-489a-a817-d644cf90db30.png' width=550>
+
+## Regression Trees
+
+For regression modelling, our measure for the "goodness of the split" is **mean squared error (MSE)** or the **sum of squared errors. (SSE)**
+
+where MSE within each leaf $e = \frac{\sum_{i=1}^n \ (y_i - \bar{y})}{n}$.
+
+Total MSE $S = \sum_{m \in leaves(Tree)} \ e_m$
+
+The **prediction** for leaf c is $\bar{y}_c$.
+
+<img src='https://user-images.githubusercontent.com/107236740/229423640-e2496b5a-1afb-4294-b648-6a82697a850d.png' width=500>
+
+<img src='https://user-images.githubusercontent.com/107236740/229423688-c466284e-3c15-4448-aa61-e24243f88a83.png' width=700>
+
+### Overfitting
+
+<img src='https://user-images.githubusercontent.com/107236740/229425161-ce04df72-9d9c-4a64-b916-5459073289be.png' width=400>
+
+### Pruning
+
+Idea: Split the training data further into training and validation sets. Grow the tree based on the training set, and evaluate its impact on validation set. Greedily remove the node that most improves validation set accuracy.
+
+<img src='https://user-images.githubusercontent.com/107236740/229425268-8369a2f4-3ba5-441a-85b3-29c119363fb8.png' width=600>
+
+## Multivariate Trees
+
