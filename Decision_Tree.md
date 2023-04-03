@@ -111,4 +111,3 @@ Idea: Split the training data further into training and validation sets. Grow th
 <img src='https://user-images.githubusercontent.com/107236740/229425268-8369a2f4-3ba5-441a-85b3-29c119363fb8.png' width=600>
 
 ## Multivariate Trees
-
