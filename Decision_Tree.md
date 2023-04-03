@@ -74,7 +74,7 @@ e.g.,
 
 We want to choose the attribute that contributes **the largest information gain**!
 
-<img scr='https://user-images.githubusercontent.com/107236740/229419237-3e651ad2-e6de-45fb-9eaf-377754019de1.png' width=500>
+<img scr='https://user-images.githubusercontent.com/107236740/229419237-3e651ad2-e6de-45fb-9eaf-377754019de1.png' width=400>
 
 ## Common Impurity Measures for Binary Problem
 
