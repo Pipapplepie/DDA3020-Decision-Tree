@@ -1,6 +1,6 @@
 # Decision Tree
 
-## Motivision
+## Motivition
 
 Till now, we have learnt 3 **parametric models**; linear regression, logistic regression, and SVM. (they are also supervised learning models) Their **limitations**:
 
@@ -63,3 +63,25 @@ i.e., 1 - max(p, 1-p)
 2. **Entropy** (for multi-class node): $I_m = - \sum_{i=1}^K \ p^i_m  log_2 p_m^i$.
 
 3. **Information Gain**: 
+
+<img src='https://user-images.githubusercontent.com/107236740/229416962-4031c671-26ba-4ccb-81b6-2670344d6eae.png' width=650>
+
+Often, we exploit the relationship: **I(x;y) = H(x) - H(x|y)** to compute the **information gain**.
+
+e.g.,
+
+<img src='https://user-images.githubusercontent.com/107236740/229418962-e68e83bf-f3b9-42fd-bd7f-bc8592e5bfd1.png' width=600>
+
+We want to choose the attribute that contributes **the largest information gain**!
+
+<img scr='https://user-images.githubusercontent.com/107236740/229419237-3e651ad2-e6de-45fb-9eaf-377754019de1.png' width=500>
+
+## Common Impurity Measures for Binary Problem
+
+- Entropy: $\phi (p) = - \sum_{i=1}^K \ p_i  log_2 p_i$
+
+- Gini Index: $\phi (p) = \sum_{i=1}^K \ p_i(1 - p_i) = 1 - \sum_{i=1}^K \ p_i^2$
+
+- Misclassification Error: $\phi (p, 1-p) = 1 - max(p, 1-p)$
+
+<img src='https://user-images.githubusercontent.com/107236740/229420176-4a806c29-9a59-489a-a817-d644cf90db30.png' width=550>
