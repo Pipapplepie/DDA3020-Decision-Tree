@@ -22,7 +22,13 @@ log likelihood: $log L(\Theta) = log(p(x)) = log({\sum_{k=1}}^K \ \pi_k N(x|\mu_
 
 ## Understand through Latent Variables
 
+Latent (Hidden) Variable Model (LVM)
 
+_Def._ A latent variable model is a statistical model that relates a set of **observable variables** to a set of latent variables.
+
+$p(x) = \sum^K_{k=1} p(x, z=k) = \sum^K p(x|z=k)p(z=k)$
+
+z ~ Categorical($\pi$), i.e., p(z=k| $\pi$) = $\pi_k$
 
 # EM
 
