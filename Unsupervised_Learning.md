@@ -1,5 +1,7 @@
 # K_Means
 
+k is the hyper-parameter.
+
 https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
 
 # Gaussian Mixture Model (GMM)
@@ -39,3 +41,8 @@ z ~ Categorical($\pi$), i.e., p(z=k| $\pi$) = $\pi_k$
 Recall convexity of functions:
 
 Latent variables
+
+### K-Means is 'hard' assignment, while GMM is 'soft' assignment.
+
+K-means: Assign each data point to the closest cluster (by comparing the distance to each center);
+GMM:  Given the current model, compute the **posterior probability** over z for each data point;
